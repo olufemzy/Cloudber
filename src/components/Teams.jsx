@@ -10,7 +10,7 @@ const Teams = ({img, name, comp, testimonial}) => {
       });
    }, []);
   return (
-   <div className='py-5 px-7 bg-[#00103B] rounded-md teams w-full md:w-[30%]'>
+   <div data-aos='zoom-in' className='py-5 px-7 bg-[#00103B] rounded-md teams w-full md:w-[30%]'>
       <div className='flex flex-row space-x-3 items-center mb-3'>
          <img src={img} alt='' className='h-10 w-10 object-cover object-right rounded-full'/>
          <div>

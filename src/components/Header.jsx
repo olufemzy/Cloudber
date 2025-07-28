@@ -32,7 +32,7 @@ const Header = () => {
                      <Link to="/" className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">HOME</Link>
                   </li>
                   <li>
-                     <Link to="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Products</Link>
+                     <Link to="/products" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Products</Link>
                   </li>
                   <li>
                      <Link to="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Pricing</Link>

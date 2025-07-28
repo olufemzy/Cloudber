@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-   background: #0A256D;
+   background: #00103B;
 }
 /* hero */
 .hero-grad{
@@ -15,4 +15,7 @@ body{
 }
 .teams{
    box-shadow: 0px 0px 4px gray;
+}
+.product{
+   box-shadow: 0px 0px 10px 3px #0e3192;
 }

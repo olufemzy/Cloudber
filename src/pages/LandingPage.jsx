@@ -16,8 +16,8 @@ import ada from '../assets/ada.jpg'
 const LandingPage = () => {
   useEffect(() => {
       Aos.init({
-         duration: 1000,
-         // once: true,     //  animation should happen only once
+        duration: 1000,
+        // once: true,     //  animation should happen only once
       });
    }, []);
 

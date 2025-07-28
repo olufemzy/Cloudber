@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { Route, Routes } from "react-router-dom";
 import Mainlayout from './layouts/Mainlayout';
 import LandingPage from './pages/LandingPage';
+import Products from './pages/Products';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Mainlayout/>}>
         <Route index element={<LandingPage/>}/>
+        <Route path='/products' element={<Products/>}/>
       </Route>
     </Routes>
   )
