@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   background: #0A256D;
+}
+/* hero */
+.hero-grad{
+   background: linear-gradient(120deg, #0B0B14,#0A256D);
+}
+/* security section */
+.sec-grad{
+   background: linear-gradient(180deg, #0B0B14,#0A256D);
+}
+.teams{
+   box-shadow: 0px 0px 4px gray;
+}
