@@ -16,8 +16,8 @@ const Header = () => {
                <img src={logo} className="w-28" alt="Flowbite Logo" />
             </Link>
             <div className="flex md:order-2  space-x-2 items-center space- md:space-x-3 rtl:space-x-reverse">
-               <Link to='/' className=" bg-[#FEC260] focus:outline-none font-medium rounded-md text-sm px-5 py-4 text-center ">Get started</Link>
-               <Link to='/' className='border px-5 py-4 text-center text-sm text-white rounded-md'>Login</Link>
+               <Link to='/signup' className=" bg-[#FEC260] focus:outline-none font-medium rounded-md text-sm px-5 py-4 text-center ">Get started</Link>
+               <Link to='/signin' className='border px-5 py-4 text-center text-sm text-white rounded-md'>Login</Link>
               
                <button data-collapse-toggle="navbar-cta" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 hover:text-black rounded-md md:hidden hover:bg-[#FEC260] focus:outline-none border-2 border-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 " aria-controls="navbar-cta" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
@@ -29,13 +29,13 @@ const Header = () => {
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
                   <li>
-                     <Link to="/" className="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:dark:text-blue-500" aria-current="page">HOME</Link>
+                     <Link to="/" className="block py-2 px-3 md:p-0 text-white bg-blue-700 md:hover:text-[#FEC260] rounded-sm md:bg-transparent " aria-current="page">Home</Link>
                   </li>
                   <li>
                      <Link to="/products" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Products</Link>
                   </li>
                   <li>
-                     <Link to="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Pricing</Link>
+                     <Link to="/pricing" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Pricing</Link>
                   </li>
                   <li>
                      <Link to="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Features</Link>

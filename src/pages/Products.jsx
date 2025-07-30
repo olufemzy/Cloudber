@@ -16,7 +16,7 @@ const Products = () => {
                   Intelligent Access. Unified Control. Zero Standing Risk.
                </p>
             </div>
-            <div className='my-12 flex md:flex-wrap flex-col max-md:space-y-5 md:flex-row justify-between md:gap-20  text-[1.2rem]'>
+            <div className='my-12 flex md:flex-wrap flex-col max-md:space-y-5 md:flex-row justify-evenly md:gap-20  text-[1.2rem]'>
                <Product img={vault} prod='VaultScan™' desc='A powerful CLI tool for scanning your cloud vaults and key management systems for misconfigurations and vulnerabilities.'/>
                <Product img={audit} prod='AutoAudit™' desc='Continuously audit your cloud environment against compliance frameworks like SOC 2, ISO 27001, and PCI DSS.'/>
                <Product img={policy} prod='PolicyBuilder AI™' desc='Leverage AI to generate human-readable security policies and infrastructure-as-code from simple prompts.'/>

@@ -26,7 +26,7 @@ const LandingPage = () => {
       {/* HERO */}
       <div className='hero-grad py-14 mt-10' data-aos='flip-up'>
         <div className='mx-3 md:m-auto text-center md:w-[50%]'>
-          <h1 className='text-5xl md:text-7xl font-bold text-[#FEC260] md:mt-48 my-6'>
+          <h1 className='text-4xl md:text-7xl font-bold text-[#FEC260] md:mt-48 my-6'>
             Clarity is Power. <br /> Access is Dominion
           </h1>
           <p className='text-[1.4rem] leading-tight mb-10 text-white'>
@@ -69,7 +69,7 @@ const LandingPage = () => {
           <p className="text-[#7388BD] text-[1.4rem] text-center">
             See how leading companies are leveraging Cloudber to enhance their security posture.
           </p>
-          <div className='mt-10 flex flex-col md:flex-row  max-md:space-y-3 md:space-x-10'>
+          <div className='mt-10 flex flex-col md:flex-row md:justify-between  max-md:space-y-3 md:space-x-10'>
             <Teams img={sarah} name='Sarah Ade.' comp='DevSecOps Lead, Innovate Inc'  testimonial='"Cloudber has transformed our approach to cloud security. The automated scans and drift detection save us countless hours."'/>
             <Teams img={mike} name='Mike P.' comp='GRC Manager, SecureSoft'  testimonial='"The PolicyBuilder AI is a game-changer for compliance. We generated our SOC 2 policies in a fraction of the time."'/>
             <Teams img={ada} name='Ada G.' comp='Head of Engineering, TechGurus'  testimonial='"The integrations with Slack and Teams keep our developers in the loop without context switching. Highly recommended!"'/>

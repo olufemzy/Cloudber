@@ -5,6 +5,9 @@ import { Route, Routes } from "react-router-dom";
 import Mainlayout from './layouts/Mainlayout';
 import LandingPage from './pages/LandingPage';
 import Products from './pages/Products';
+import PricingPage from './pages/PricingPage';
+import Signup from './pages/Signup';
+import Signin from './pages/Signin';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +17,10 @@ function App() {
       <Route path='/' element={<Mainlayout/>}>
         <Route index element={<LandingPage/>}/>
         <Route path='/products' element={<Products/>}/>
+        <Route path='/pricing' element={<PricingPage/>}/>
       </Route>
+      <Route path='/signup' element={<Signup/>}/>
+      <Route path='/signin' element={<Signin/>}/>
     </Routes>
   )
 }
