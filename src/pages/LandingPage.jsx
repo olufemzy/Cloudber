@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
@@ -21,6 +22,22 @@ const LandingPage = () => {
       });
    }, []);
 
+    const location = useLocation();
+
+    useEffect(() => {
+      const scrollTo = location.state?.scrollTo;
+      if (scrollTo) {
+        const el = document.getElementById(scrollTo);
+        if (el) {
+          // Give time for rendering before scroll
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }
+      }
+    }, [location]);
+      
+
   return (
     <div>
       {/* HERO */}
@@ -41,7 +58,7 @@ const LandingPage = () => {
         </div>
       </div>
       {/*KEY FEATURES */}
-      <div className='bg-[#00103B] py-14 text-white text-center'>
+      <div id='features' className='bg-[#00103B] py-14 text-white text-center'>
         <div className='mx-3 md:mx-[7%]'>
           <p className='p-3 bg-[#0A256D] rounded-md w-fit mx-auto mb-4' >Key Features</p>
           <h1 className='text-5xl font-bold mb-2'>Automate IAM, PAM and GRC with AI</h1>
