@@ -8,6 +8,7 @@ const Signin = () => {
 
    const handleSubmit = (e) => {
       e.preventDefault()
+      console.log('Form submitted successfully');
    }
 
 
@@ -19,16 +20,16 @@ const Signin = () => {
       <div className='bg-[#0A256D] rounded-md md:p-10 py-8 px-3  w-full'>
          <h1 className=' text-center text-3xl font-semibold text-white mb-2'>Welcome Back</h1>
          <p className=' text-center text-[#7388BD] text-[1.3rem] font-semibold mb-6'>Enter your credentials to access your account.</p>
-         <form className='mb-10'>
+         <form onSubmit={handleSubmit} className='mb-10'>
             <div className='flex flex-col'>
                <label htmlFor="email" className='text-white mb-2 text-[1.1rem] font-semibold'>Email</label>
-               <input type="email" id='email' placeholder='user@gmail.com' name='email' className='border-none rounded-md bg-[#00103B] text-white px-4 mb-4' />
+               <input type="email" id='email' placeholder='user@gmail.com' name='email' required className='border-none rounded-md bg-[#00103B] text-white px-4 mb-4' />
                <Link to='#' className='text-right text-white text-sm underline'>Forgot your password</Link>
             </div>
             <div className='flex flex-col mb-10'>
                <label htmlFor="password" className='text-white mb-2 text-[1.1rem] font-semibold'>Password</label>
                <div className=' flex flex-row space-x-3 w-full rounded-md bg-[#00103B] items-center text-white px-4 '>
-                  <input type={visible ? "text" : "password"} id='password' placeholder='**********' name='password' className='px-0 border-none w-full bg-transparent ' />
+                  <input type={visible ? "text" : "password"} id='password' placeholder='**********' name='password' required className='px-0 border-none w-full bg-transparent ' />
                   <span onClick={() => setVisible(!visible)} className='cursor-pointer' >
                      {visible 
                         ? <FaRegEyeSlash color='#FEC260' size='23'/>
