@@ -49,7 +49,7 @@ const LandingPage = () => {
           <p className='text-[1.4rem] leading-tight mb-10 text-white'>
             Built for the next era of cloud security, where access is learned, audited, and enforced in one intelligent loop.
           </p>
-          <Link to='/' className='mb-10 text-[1.4rem] p-6 bg-[#0A256D] text-[#FEC260] block w-fit mx-auto px-16 font-semibold rounded-md'>
+          <Link to='/signup' className='mb-10 text-[1.4rem] p-6 bg-[#0A256D] text-[#FEC260] block w-fit mx-auto px-16 font-semibold rounded-md'>
             Get Started
           </Link>
           <p className='italic text-[1.1rem] text-[#7388BD]'>
