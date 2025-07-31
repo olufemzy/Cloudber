@@ -17,7 +17,7 @@ const Header = () => {
             </Link>
             <div className="flex md:order-2  space-x-2 items-center space- md:space-x-3 rtl:space-x-reverse">
                <Link to='/signup' className=" bg-[#FEC260] focus:outline-none font-medium rounded-md text-sm md:px-5 md:py-4 p-3  text-center ">Get started</Link>
-               <Link to='/home'  className='border md:px-7 md:py-4 p-4 py-[0.63rem] text-center text-sm text-white rounded-md'>Login</Link>
+               <Link to='/signin'  className='border md:px-7 md:py-4 p-4 py-[0.63rem] text-center text-sm text-white rounded-md'>Login</Link>
               
                <button data-collapse-toggle="navbar-cta" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 hover:text-black rounded-md md:hidden hover:bg-[#FEC260] focus:outline-none border-2 border-gray-100 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 " aria-controls="navbar-cta" aria-expanded="false">
                   <span className="sr-only">Open main menu</span>
