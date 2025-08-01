@@ -11,6 +11,7 @@ import Signin from './pages/Signin';
 import DashboardLayout from './layouts/DashboardLayout';
 import Home from './Users/Home';
 import UserSettings from './Users/UserSettings';
+import UserProducts from './Users/UserProducts';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
       <Route element={<DashboardLayout/>}>
           <Route path='/home' element={<Home/>}/>
           <Route path='/usersettings' element={<UserSettings/>}/>
+          <Route path='/userproducts' element={<UserProducts/>}/>
       </Route>
 
     </Routes>

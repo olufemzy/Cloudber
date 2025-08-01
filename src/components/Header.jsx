@@ -1,12 +1,17 @@
 import { initFlowbite } from 'flowbite';
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png'
 
 const Header = () => {
    useEffect(() => {
       initFlowbite();
    }, []);
+
+   const getNavLinkClass = (isActive) =>
+      isActive
+      ? 'text-[#FEC260]'
+      : 'text-white';
 
   return (
    <>  
@@ -29,13 +34,13 @@ const Header = () => {
             <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
                <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:border-gray-700">
                   <li>
-                     <Link to="/" className="block py-2 px-3 md:p-0 text-white bg-blue-700 md:hover:text-[#FEC260] rounded-sm md:bg-transparent " aria-current="page">Home</Link>
+                     <NavLink to="/"  className={({ isActive }) =>`${getNavLinkClass(isActive)} block py-2 px-3 md:p-0  bg-blue-700 md:hover:text-[#FEC260] rounded-sm md:bg-transparent`} aria-current="page">Home</NavLink>
                   </li>
                   <li>
-                     <Link to="/products" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Products</Link>
+                     <NavLink to="/products" className={({ isActive }) =>`${getNavLinkClass(isActive)} block py-2 px-3 md:p-0  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260] dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700`}>Products</NavLink>
                   </li>
                   <li>
-                     <Link to="/pricing" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Pricing</Link>
+                     <NavLink to="/pricing" className={({ isActive }) =>`${getNavLinkClass(isActive)} block py-2 px-3 md:p-0  rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260] dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700`}>Pricing</NavLink>
                   </li>
                   <li>
                      <Link state={{ scrollTo: 'features' }} to="/" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#FEC260]  dark:text-white dark:hover:bg-gray-700  md:dark:hover:bg-transparent dark:border-gray-700">Features</Link>

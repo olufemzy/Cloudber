@@ -8,7 +8,7 @@ const UserSettings = () => {
    }
 
   return (
-      <div >
+      <div>
          <div className='border-b border-[#1E47B5] text-white '>
             <h1 className='text-2xl font-semibold mb-1'>Settings</h1>
             <p className='text-[#7388BD] text-sm mb-8'>Manage your account settings and preferences.</p>

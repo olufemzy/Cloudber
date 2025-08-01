@@ -3,9 +3,15 @@ import { AiOutlineProduct } from 'react-icons/ai';
 import { ImLab } from 'react-icons/im';
 import { IoCloseCircleSharp, IoHomeOutline, IoSettingsOutline } from 'react-icons/io5';
 import { TbLogs } from 'react-icons/tb';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({ isOpen, sideBarShown }) => {
+
+   const getNavLinkClass = (isActive) =>
+      isActive
+      ? 'bg-[#1E47B5]'
+      : '';
+
   return (
       <div className={`fixed z-30 inset-y-0 left-0 bg-[#0A256D] text-white w-72  lg:mt-24 transform 
          ${isOpen ? 'translate-x-0' : '-translate-x-full'} 
@@ -19,26 +25,26 @@ const Sidebar = ({ isOpen, sideBarShown }) => {
             </div>
          }
          <nav className="p-4 space-y-2">
-            <Link to="#" className="bg-[#1E47B5] hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center ">
+            <NavLink to='/home' className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <IoHomeOutline className='inline mr-2' size={20} />
                Home
-            </Link>
-            <Link to="#" className=" hover:bg-[#1E47B5]  p-3 py-[0.55rem] font-semibold rounded-md flex items-center ">
+            </NavLink>
+            <NavLink to="/" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <TbLogs className='inline mr-2' size={20} />
                Logs
-            </Link>
-            <Link to="#" className=" hover:bg-[#1E47B5]  p-3 py-[0.55rem] font-semibold rounded-md flex items-center ">
+            </NavLink>
+            <NavLink to="/" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <ImLab className='inline mr-2' size={20} />
                Labs
-            </Link>
-            <Link to="#" className=" hover:bg-[#1E47B5]  p-3 py-[0.55rem] font-semibold rounded-md flex items-center ">
+            </NavLink>
+            <NavLink to="/userproducts" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <AiOutlineProduct className='inline mr-2' size={20} />
                Products
-            </Link>
-            <Link to="/usersettings" className=" hover:bg-[#1E47B5]  p-3 py-[0.55rem] font-semibold rounded-md flex items-center ">
+            </NavLink>
+            <NavLink to="/usersettings" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <IoSettingsOutline className='inline mr-2' size={20} />
                Settings
-            </Link>
+            </NavLink>
          </nav>
       </div>
   );
