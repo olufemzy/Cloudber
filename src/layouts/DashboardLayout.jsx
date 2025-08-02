@@ -10,13 +10,11 @@ const DashboardLayout = () => {
   }
 
   return (
-    <div className="h-screen flex flex-col ">
+    <div className="h-screen flex flex-col bg-deep-blue">
       <DashTopBar toggleSidebar={handleOpenSideBar} />
-      {/* <Sidebar isOpen={sidebarOpen} sideBarShown={handleOpenSideBar} /> */}
       <div className="flex-1 flex">
         <Sidebar isOpen={sidebarOpen} sideBarShown={handleOpenSideBar} />
-        {/* <DashTopBar toggleSidebar={handleOpenSideBar} /> */}
-        <main className="lg:ml-72 mt-24 w-full p-4 overflow-auto">
+        <main className="lg:ml-72 mt-24 w-full p-8 overflow-auto">
           <Outlet />
         </main>
       </div>
