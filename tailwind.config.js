@@ -13,6 +13,7 @@ export default {
         'light-blue': '#7388BD',
         'semi-light-blue': '#1E47B5',
         'strong-red': '#7F1C1C',
+        'gold': '#FEC260',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],

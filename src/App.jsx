@@ -12,6 +12,7 @@ import DashboardLayout from './layouts/DashboardLayout';
 import Home from './Users/Home';
 import UserSettings from './Users/UserSettings';
 import UserProducts from './Users/UserProducts';
+import Logs from './Users/Logs';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/home' element={<Home/>}/>
           <Route path='/usersettings' element={<UserSettings/>}/>
           <Route path='/userproducts' element={<UserProducts/>}/>
+          <Route path='/logs' element={<Logs />} />
       </Route>
 
     </Routes>

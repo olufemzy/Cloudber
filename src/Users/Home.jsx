@@ -120,7 +120,7 @@ const Home = () => {
               <textarea id="security-events" rows="3" className="w-full bg-deep-blue border border-semi-light-blue rounded-lg p-2 text-white placeholder-light-blue" placeholder="e.g. Unexplained outbound traffic from a container, multiple failed login attempts on a developer account."></textarea>
           </div>
           
-          <button className="bg-yellow-500 hover:bg-opacity-80 text-black font-bold py-2 px-4 rounded-lg">
+          <button className="bg-gold hover:bg-opacity-80 text-black font-bold py-2 px-4 rounded-lg">
               Get Recommendations
           </button>
       </div>
