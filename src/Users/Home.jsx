@@ -1,12 +1,13 @@
 import React from 'react';
 import { BellIcon } from '@heroicons/react/24/solid';
+import policy from '../assets/policybuild.png';
 
 const Home = () => {
   return (
     <div className="text-white space-y-8 font-sans">
       {/* Access Level */}
-      <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="md:col-span-2">
             <div className="bg-blue p-6 rounded-lg">
               <h2 className="text-lg font-semibold mb-2 text-light-blue">Access Level</h2>
               <span className="inline-block bg-deep-blue text-white text-sm font-semibold px-3 py-1 rounded-full mb-2">Developer</span>
@@ -16,8 +17,8 @@ const Home = () => {
       </div>
 
       {/* Recent Activity and Notifications */}
-      <div className="flex gap-8">
-        <div className="w-[55%]">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-[55%]">
           <div className="bg-blue p-6 rounded-lg h-full">
             <h2 className="text-xl font-bold mb-4">Recent Activity</h2>
             <ul>
@@ -56,7 +57,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="w-[45%]">
+        <div className="w-full md:w-[45%]">
           <div className="bg-blue p-6 rounded-lg h-full">
             <div className="flex items-center mb-4">
               <BellIcon className="h-6 w-6 mr-3" />
@@ -97,15 +98,7 @@ const Home = () => {
       {/* AI Assistant */}
       <div className="bg-blue p-6 rounded-lg">
           <div className="flex items-center mb-4">
-              <svg className="h-8 w-8 mr-3" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 13.4545V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H22C23.0609 6 24.0783 6.42143 24.8284 7.17157C25.5786 7.92172 26 8.93913 26 10V13.4545" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M6 22L4 26" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M26 22L28 26" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 26H20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M16 6V2" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M16 28V26" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <rect x="3" y="13" width="26" height="10" rx="2" stroke="white" strokeWidth="2"/>
-              </svg>
+          <img src={policy} alt="PolicyBuilder AI" className="h-12 w-12 md:h-10 md:w-10 mr-0 md:mr-4 flex-shrink-0 mb-4 md:mb-0" />
               <h2 className="text-xl font-bold">AI Assistant</h2>
           </div>
           <p className="text-light-blue mb-4">Get AI-powered security recommendations for your cloud environment.</p>

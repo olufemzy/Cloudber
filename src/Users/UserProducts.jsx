@@ -11,38 +11,38 @@ const UserProducts = () => {
   return (
       <div className=' text-white'>
          <div className='lg:mb-5 max-md:my-0 mt-5 md:mt-5'> 
-            <h1 className='text-4xl font-bold text-center'>Our Suite of Tools</h1>
-            <p className="text-[#7388BD] text-[1.1rem] text-center">
+            <h1 className='text-3xl md:text-4xl font-bold text-center'>Our Suite of Tools</h1>
+            <p className="text-[#7388BD] text-base md:text-[1.1rem] text-center px-4">
                Everything you need to secure your cloud, from development to production.
             </p>
          </div>
 
-         <div className='my-5 lg:my-10  flex flex-col max-md:space-y-5 md:flex-row justify-between md:space-x-10'>
+         <div className='my-5 lg:my-10 flex flex-col md:flex-row justify-between gap-8 md:gap-10 px-4'>
             <Userproduct
                img={vault}
                prodName='VaultScan™'
                prodDesc='A powerful CLI tool for scanning your cloud vaults and key management systems for misconfigurations and vulnerabilities.'
-               prodRoute='#'
+               prodRoute='/vaultscan'
             />
             <Userproduct
                img={audit}
                prodName='AutoAudit™'
                prodDesc='Continuously audit your cloud environment against compliance frameworks like SOC 2, ISO 27001, and PCI DSS.'
-               prodRoute='#'
+               prodRoute='/autoaudit'
             />
          </div>
-         <div className=' flex flex-col max-md:space-y-5 md:flex-row justify-between md:space-x-10'>
+         <div className='my-5 lg:my-10 flex flex-col md:flex-row justify-between gap-8 md:gap-10 px-4'>
             <Userproduct
                img={policy}
                prodName='PolicyBuilder AI™'
                prodDesc='Leverage AI to generate human-readable security policies and infrastructure-as-code from simple prompts.'
-               prodRoute='#'
+               prodRoute='/policybuilder'
             />
             <Userproduct
                img={loop}
                prodName='AccessIntel Loop™'
                prodDesc='Detect and analyze configuration drifts in real-time, with intelligent remediation suggestions to close security gaps.'
-               prodRoute='#'
+               prodRoute='/accessintel-loop'
             />
          </div>
       </div>

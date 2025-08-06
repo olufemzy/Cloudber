@@ -26,17 +26,17 @@ const Logs = () => {
 
   return (
     <div className="text-white font-sans">
-      <div className="bg-blue p-8 rounded-lg">
-        <h1 className="text-3xl font-bold">Access Logs</h1>
+      <div className="bg-blue p-4 md:p-8 rounded-lg">
+        <h1 className="text-2xl md:text-3xl font-bold">Access Logs</h1>
         <p className="text-light-blue mt-2 mb-6">A detailed record of all activities within your organization.</p>
         
-        <div className="flex items-center mb-6">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center mb-6">
           <input 
             type="text" 
             placeholder="Filter logs..."
-            className="w-96 bg-deep-blue text-white placeholder-light-blue px-4 py-2.5 rounded-md border-2 border-semi-light-blue focus:outline-none focus:ring-2 focus:ring-semi-light-blue"
+            className="w-full md:w-96 bg-deep-blue text-white placeholder-light-blue px-4 py-2.5 rounded-md border-2 border-semi-light-blue focus:outline-none focus:ring-2 focus:ring-semi-light-blue mb-4 md:mb-0"
           />
-          <button className="bg-gold hover:bg-opacity-80 text-black font-bold py-2.5 px-6 rounded-md ml-4">
+          <button className="bg-gold hover:bg-opacity-80 text-black font-bold py-2.5 px-6 rounded-md md:ml-4">
             Search
           </button>
         </div>
@@ -54,8 +54,8 @@ const Logs = () => {
             <tbody>
               {logs.map((log, index) => (
                 <tr key={index} className="border-b border-semi-light-blue">
-                  <td className="py-4 px-4">{log.timestamp}</td>
-                  <td className="py-4 px-4">{log.user}</td>
+                  <td className="py-4 px-4 whitespace-nowrap">{log.timestamp}</td>
+                  <td className="py-4 px-4 whitespace-nowrap">{log.user}</td>
                   <td className="py-4 px-4">{log.action}</td>
                   <td className="py-4 px-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getRiskClass(log.risk)}`}>

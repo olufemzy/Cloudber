@@ -13,6 +13,11 @@ import Home from './Users/Home';
 import UserSettings from './Users/UserSettings';
 import UserProducts from './Users/UserProducts';
 import Logs from './Users/Logs';
+import VaultScan from './Users/VaultScan';
+import AutoAudit from './Users/AutoAudit';
+import PolicyBuilder from './Users/PolicyBuilder';
+import AccessIntelLoop from './Users/AccessIntelLoop';
+import Labs from './Users/Labs';
 
 function App() {
 
@@ -33,6 +38,11 @@ function App() {
           <Route path='/usersettings' element={<UserSettings/>}/>
           <Route path='/userproducts' element={<UserProducts/>}/>
           <Route path='/logs' element={<Logs />} />
+          <Route path='/vaultscan' element={<VaultScan />} />
+          <Route path='/autoaudit' element={<AutoAudit />} />
+          <Route path='/policybuilder' element={<PolicyBuilder />} />
+          <Route path='/accessintel-loop' element={<AccessIntelLoop />} />
+          <Route path='/labs' element={<Labs />} />
       </Route>
 
     </Routes>
