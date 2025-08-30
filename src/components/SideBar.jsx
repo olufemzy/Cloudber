@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, sideBarShown }) => {
                <TbLogs className='inline mr-2' size={20} />
                Logs
             </NavLink>
-            <NavLink to="/" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
+            <NavLink to="/labs" className={({ isActive }) =>`${getNavLinkClass(isActive)} hover:bg-[#1E47B5] p-3 py-[0.55rem] font-semibold rounded-md flex items-center`}>
                <ImLab className='inline mr-2' size={20} />
                Labs
             </NavLink>
